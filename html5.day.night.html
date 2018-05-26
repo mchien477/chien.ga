@@ -243,6 +243,21 @@ body {
   background: #e9e5d5;
 }
 </style>
+
+<script>
+$("#switch").click(function () {
+	if ($("#fullpage").hasClass("night")) {
+		$("#fullpage").removeClass("night");
+		$("#switch").removeClass("switched");
+	}
+	else {
+		$("#fullpage").addClass("night");
+		$("#switch").addClass("switched");
+
+	}
+});
+</script>
+
 <div id="fullpage">  
   <div class="section">
     <p id="info">Scroll down...</p>
@@ -273,16 +288,4 @@ body {
     </div>
 			  </div>
 </div>
-<script>
-$("#switch").click(function () {
-	if ($("#fullpage").hasClass("night")) {
-		$("#fullpage").removeClass("night");
-		$("#switch").removeClass("switched");
-	}
-	else {
-		$("#fullpage").addClass("night");
-		$("#switch").addClass("switched");
 
-	}
-});
-</script>
